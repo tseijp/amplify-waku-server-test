@@ -7,7 +7,6 @@ frontend:
     build:
       commands:
         - npm run build
-        - tsup startServer.ts --format esm
     postBuild:
       commands:
         - rm -rf ./.amplify-hosting

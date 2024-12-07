@@ -13,6 +13,9 @@ frontend:
         - mkdir -p ./.amplify-hosting/compute
         - cp -r ./dist ./.amplify-hosting/compute/default
         - cp -r ./node_modules ./.amplify-hosting/compute/default/node_modules
+        - cp ./node_modules/waku/dist/cli.js ./.amplify-hosting/compute/default/index.js
+        - echo 'values.port = "3000"' >> ./.amplify-hosting/compute/default/index.js
+        - echo 'runStart()' >> ./.amplify-hosting/compute/default/index.js
         - cp -r ./public ./.amplify-hosting/static
         - cp -r ./public ./.amplify-hosting/compute/default
         - cp deploy-manifest.json ./.amplify-hosting/deploy-manifest.json

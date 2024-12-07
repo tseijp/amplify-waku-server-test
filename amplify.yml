@@ -6,7 +6,8 @@ frontend:
         - npm ci --cache .npm --prefer-offline
     build:
       commands:
-        - tsc --outDir dist
+        - npm run build
+        - tsup startServer.ts --format esm
     postBuild:
       commands:
         - rm -rf ./.amplify-hosting

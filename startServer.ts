@@ -11,8 +11,6 @@ app.use(compress());
 
 app.use(serveStatic({ root: "./dist/public" }));
 
-// app.use(serverEngine);
-
 app.use(
   serverEngine({
     cmd: "start",

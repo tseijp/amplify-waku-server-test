@@ -2,6 +2,7 @@
   "name": "waku-amplify-with-lambda-test",
   "version": "0.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "waku dev",
     "build": "waku build && tsc server/startServer.ts --outDir server/dist",

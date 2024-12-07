@@ -40,7 +40,7 @@
     {
       "name": "default",
       "runtime": "nodejs18.x",
-      "entrypoint": "index.js"
+      "entrypoint": "node_modules/waku/dist/cli.js"
     }
   ]
 }

@@ -1,5 +1,7 @@
 node_modules
 dist
+dist2
+.amplify-hosting
 .env*
 *.tsbuildinfo
 .cache

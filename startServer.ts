@@ -14,8 +14,10 @@ app.use(serveStatic({ root: "./dist/public" }));
 app.use(
   serverEngine({
     cmd: "start",
-    loadEntries: () => import("./dist/entries" as any),
-    env: process.env as any,
+    // @ts-ignore
+    loadEntries: () => import("./dist/entries"),
+    // @ts-ignore
+    env: process.env,
   })
 );
 

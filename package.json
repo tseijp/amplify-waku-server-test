@@ -7,7 +7,7 @@
     "dev": "waku dev",
     "build": "waku build && tsc server/startServer.ts --outDir server/dist",
     "start": "waku start",
-    "serve": "tsx watch dist2/startServer.js"
+    "serve": "npx tsx watch dist2/startServer.js"
   },
   "dependencies": {
     "react": "19.0.0-rc-7670501b-20241124",
@@ -21,7 +21,6 @@
     "@types/react-dom": "18.3.1",
     "autoprefixer": "10.4.20",
     "tailwindcss": "3.4.15",
-    "tsx": "^4.7.1",
     "typescript": "5.7.2"
   }
 }

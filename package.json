@@ -1,12 +1,12 @@
 {
   "name": "waku-amplify-with-lambda-test",
   "version": "0.0.0",
-  "type": "module",
   "private": true,
   "scripts": {
     "dev": "waku dev",
     "build": "waku build",
-    "start": "waku start"
+    "start": "waku start",
+    "serve": "tsx watch startServer.ts"
   },
   "dependencies": {
     "react": "19.0.0-rc-7670501b-20241124",
@@ -19,6 +19,8 @@
     "@types/react-dom": "18.3.1",
     "autoprefixer": "10.4.20",
     "tailwindcss": "3.4.15",
+    "tsup": "^8.3.5",
+    "tsx": "^4.7.1",
     "typescript": "5.7.2"
   }
 }

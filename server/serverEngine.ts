@@ -1,9 +1,13 @@
 import type { Context } from "hono";
 
 const middleware = () => [
+  // @ts-ignore
   import("waku/middleware/context"),
+  // @ts-ignore
   import("waku/middleware/dev-server"),
+  // @ts-ignore
   import("waku/middleware/rsc"),
+  // @ts-ignore
   import("waku/middleware/ssr"),
 ];
 
@@ -13,6 +17,7 @@ const loadEntries = () => import("./dist/entries");
 const options = {
   cmd: "start",
   loadEntries,
+  // @ts-ignore
   env: process.env as any,
 };
 

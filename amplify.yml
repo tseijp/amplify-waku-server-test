@@ -11,7 +11,8 @@ frontend:
       commands:
         - rm -rf ./.amplify-hosting
         - mkdir -p ./.amplify-hosting/compute
-        - cp -r ./dist2 ./.amplify-hosting/compute/default
+        - cp -r ./server/dist ./.amplify-hosting/compute/default/
+        - cp -r ./dist ./.amplify-hosting/compute/default/dist
         - cp -r ./node_modules ./.amplify-hosting/compute/default/node_modules
         - cp -r ./dist/public ./.amplify-hosting/static
         - cp -r ./dist/public ./.amplify-hosting/compute/default

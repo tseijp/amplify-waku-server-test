@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "waku dev",
-    "build": "waku build && tsup startServer.ts --format esm",
+    "build": "waku build && tsup startServer.ts --format esm --out-dir dist2",
     "start": "waku start",
-    "serve": "tsx watch dist/startServer.js"
+    "serve": "tsx watch dist2/startServer.js"
   },
   "dependencies": {
     "react": "19.0.0-rc-7670501b-20241124",

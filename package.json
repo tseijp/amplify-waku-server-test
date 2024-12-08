@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "waku dev",
     "build": "waku build",
-    "start": "waku start",
-    "serve": "npx tsx watch dist2/startServer.js"
+    "start": "waku start"
   },
   "dependencies": {
     "react": "19.0.0-rc-7670501b-20241124",

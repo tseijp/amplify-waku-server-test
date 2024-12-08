@@ -17,6 +17,7 @@ frontend:
         - cp -r ./dist/public ./.amplify-hosting/compute/default
         - cp deploy-manifest.json ./.amplify-hosting/deploy-manifest.json
         - cp startServer.mjs ./.amplify-hosting/compute/default/startServer.mjs
+        - 'echo "{ \"type\": \"module\" }" > ./.amplify-hosting/compute/default/package.json'
   artifacts:
     baseDirectory: .amplify-hosting
     files:

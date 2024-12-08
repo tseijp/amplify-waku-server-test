@@ -5,9 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "waku dev",
-    "build": "waku build && tsc server/startServer.ts --outDir server/dist",
-    "start": "waku start",
-    "serve": "npx tsx watch dist2/startServer.js"
+    "build": "waku build",
+    "start": "waku start"
   },
   "dependencies": {
     "react": "19.0.0-rc-7670501b-20241124",

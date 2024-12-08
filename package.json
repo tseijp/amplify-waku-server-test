@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "waku dev",
-    "build": "waku build && tsc server/startServer.ts --outDir server/dist",
+    "build": "waku build",
     "start": "waku start",
     "serve": "npx tsx watch dist2/startServer.js"
   },

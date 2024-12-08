@@ -2,20 +2,22 @@
 
 ### Getting started
 
-```
+```ruby
 npm create waku@latest
 cd amplify-waku-server-test
-``
+```
 
 ### Update main file
 
+```ruby
 curl -O https://raw.githubusercontent.com/tseijp/amplify-waku-server-test/refs/heads/main/startServer.mjs
 curl -O https://raw.githubusercontent.com/tseijp/amplify-waku-server-test/refs/heads/main/deploy-manifest.json
 curl -O https://raw.githubusercontent.com/tseijp/amplify-waku-server-test/refs/heads/main/amplify.yml
+```
 
 ### Push to Github and deploy
 
-```
+```ruby
 echo ".amplify-hosting" >> .gitignore
 git add .
 git commit -m ":tada: init commit"

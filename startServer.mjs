@@ -2,7 +2,7 @@ import { Hono } from "hono";
 import { compress } from "hono/compress";
 import { serve } from "@hono/node-server";
 import { serveStatic } from "@hono/node-server/serve-static";
-import { serverEngine } from "./serverEngine.mjs";
+import { serverEngine } from "waku/unstable_hono";
 
 const app = new Hono();
 
